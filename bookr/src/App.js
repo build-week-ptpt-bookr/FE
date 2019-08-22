@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './bookLogo.png';
 import './App.css';
+import ContainerExampleContainer from './Components/Container';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <h2>Bookr</h2>
         </a>
       </header>
+      >
     </div>
   );
 }
