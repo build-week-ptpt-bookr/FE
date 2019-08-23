@@ -6,7 +6,7 @@ import logo from '../bookLogo.png';
 export default function Navbar() {
   return (
     <div className="app-header">
-      <nav className="navbar">
+      <nav className="navbar navbar-fixed-top">
         <img src={logo} alt="logo" className="logo" />
         <ul className="main-nav" id="js-menu">
           <li>
