@@ -16,6 +16,7 @@ export default function StickyNavbar() {
     <BrowserRouter>
       <nav className="navbar navbar-fixed-left">
         <img src={logo} alt="logo" className="logo" />
+        <h1>Bookr</h1>
         <ul className="main-nav" id="js-menu">
           <li>
             <Link to="/" className="nav-links">
