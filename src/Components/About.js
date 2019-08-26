@@ -13,3 +13,4 @@ export default function About() {
     <h2>About</h2>
   );
 }
+// blank about page
