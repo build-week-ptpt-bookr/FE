@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Home from './Home';
-import ProductList from './ProductList';
+import BookList from './BookList';
 import About from './About';
 import MyCart from './MyCart';
 import ContactUs from './ContactUs';
@@ -21,8 +21,8 @@ export default function StickyNavbar() {
             <Link to="/" className="nav-links">
               Home
             </Link>
-            <Link to="/productList" className="nav-links">
-              Product
+            <Link to="/bookList" className="nav-links">
+              Books
             </Link>
             <Link to="/about" className="nav-links">
               About
@@ -37,7 +37,7 @@ export default function StickyNavbar() {
         </ul>
       </nav>
       <Route path="/" exact component={Home} />
-      <Route path="/product" component={ProductList} />
+      <Route path="/bookList" component={BookList} />
       <Route path="/about" component={About} />
       <Route path="/myCart" component={MyCart} />
       <Route path="/contactUs" component={ContactUs} />
