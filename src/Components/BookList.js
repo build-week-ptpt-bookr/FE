@@ -10,7 +10,7 @@ export default function BookList() {
       .get('https://lambda-bookr.herokuapp.com/api/books/')
       .then(response => {
         setBooks(response.data);
-        console.log(response);
+        console.log(response.data);
       })
       .catch(error => console.log(error));
   }, []);

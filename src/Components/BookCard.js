@@ -11,9 +11,6 @@ export default function BookCard(props) {
     <Card className="body-width">
       <Card.Content header={props.book.title} />
       <Card.Content description={props.book.description} />
-      <Card.Content extra>
-        <Icon name="child" />
-      </Card.Content>
     </Card>
   );
 }

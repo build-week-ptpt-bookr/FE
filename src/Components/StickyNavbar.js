@@ -19,7 +19,7 @@ export default function StickyNavbar() {
         <img src={logo} alt="logo" className="logo" />
         <ul className="main-nav" id="js-menu">
           <li>
-            <NavLink to="/Home" className="nav-links" activeClassName="hurray">
+            <NavLink to="/" className="nav-links" activeClassName="hurray">
               Home
             </NavLink>
 
@@ -51,7 +51,7 @@ export default function StickyNavbar() {
         </ul>
       </nav>
       <Switch>
-        <Route path="/home" exact component={Home} />
+        <Route path="/" exact component={Home} />
         <Route path="/bookList" component={BookList} />
         <Route path="/about" component={About} />
         <Route path="/myCart" component={MyCart} />
