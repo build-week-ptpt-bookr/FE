@@ -1,13 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 import './App.css';
 import StickyNavbar from './Components/StickyNavbar';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter className="App">
       <StickyNavbar />
-    </div>
+    </BrowserRouter>
   );
 }
 

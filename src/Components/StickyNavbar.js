@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Route, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import BookList from './BookList';
 import About from './About';
 import MyCart from './MyCart';
 import ContactUs from './ContactUs';
+import NoMatch from './NoMatch';
 
 import './StickyNavbar.css';
 
@@ -16,10 +17,9 @@ export default function StickyNavbar() {
     <BrowserRouter>
       <nav className="navbar navbar-fixed-left">
         <img src={logo} alt="logo" className="logo" />
-        <h1>Bookr</h1>
         <ul className="main-nav" id="js-menu">
           <li>
-            <NavLink to="/home" className="nav-links" activeClassName="hurray">
+            <NavLink to="/Home" className="nav-links" activeClassName="hurray">
               Home
             </NavLink>
 
@@ -50,11 +50,15 @@ export default function StickyNavbar() {
           </li>
         </ul>
       </nav>
-      <Route path="/home" exact component={Home} />
-      <Route path="/bookList" component={BookList} />
-      <Route path="/about" component={About} />
-      <Route path="/myCart" component={MyCart} />
-      <Route path="/contactUs" component={ContactUs} />
+      <Switch>
+        <Route path="/home" exact component={Home} />
+        <Route path="/bookList" component={BookList} />
+        <Route path="/about" component={About} />
+        <Route path="/myCart" component={MyCart} />
+        <Route path="/contactUs" component={ContactUs} />
+        {/* NoMatch not quite working, not throwing errors */}
+        <Route component={NoMatch} />
+      </Switch>
     </BrowserRouter>
   );
 }
