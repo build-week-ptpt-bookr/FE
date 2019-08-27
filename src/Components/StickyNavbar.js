@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, NavLink } from 'react-router-dom';
 
 import Home from './Home';
 import BookList from './BookList';
@@ -19,25 +19,38 @@ export default function StickyNavbar() {
         <h1>Bookr</h1>
         <ul className="main-nav" id="js-menu">
           <li>
-            <Link to="/" className="nav-links">
+            <NavLink to="/home" className="nav-links" activeClassName="hurray">
               Home
-            </Link>
-            <Link to="/bookList" className="nav-links">
+            </NavLink>
+
+            <NavLink
+              to="/bookList"
+              className="nav-links"
+              activeClassName="hurray"
+            >
               Books
-            </Link>
-            <Link to="/about" className="nav-links">
+            </NavLink>
+            <NavLink to="/about" className="nav-links" activeClassName="hurray">
               About
-            </Link>
-            <Link to="/myCart" className="nav-links">
+            </NavLink>
+            <NavLink
+              to="/myCart"
+              className="nav-links"
+              activeClassName="hurray"
+            >
               My Cart
-            </Link>
-            <Link to="/contactUs" className="nav-links">
+            </NavLink>
+            <NavLink
+              to="/contactUs"
+              className="nav-links"
+              activeClassName="hurray"
+            >
               Contact Us
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
-      <Route path="/" exact component={Home} />
+      <Route path="/home" exact component={Home} />
       <Route path="/bookList" component={BookList} />
       <Route path="/about" component={About} />
       <Route path="/myCart" component={MyCart} />
