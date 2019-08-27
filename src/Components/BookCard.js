@@ -1,8 +1,5 @@
 import React from 'react';
-import { Card, Icon } from 'semantic-ui-react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-
-import ReviewsList from './ReviewsList';
+import { Card } from 'semantic-ui-react';
 
 import './BookList.css';
 

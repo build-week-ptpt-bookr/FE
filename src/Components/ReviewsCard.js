@@ -1,13 +1,9 @@
 import React from 'react';
-import { Card, Icon, Divider } from 'semantic-ui-react';
-import ReviewsList from './ReviewsList';
+import { Card } from 'semantic-ui-react';
 
 import './ReviewsCard.css';
 
 export default function ReviewsCard(props) {
-  {
-    console.log(props);
-  }
   return (
     <Card className="body-width">
       <Card.Content header={props.review.title} />
