@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Route, Link } from 'react-router-dom';
 
 import BookCard from './BookCard';
-import ReviewsList from './ReviewsList';
 
 export default function BookList() {
   const [books, setBooks] = useState([]);
@@ -24,8 +22,6 @@ export default function BookList() {
           return <BookCard book={book} key={book.id} />;
         })}
       </section>
-      <Link to="reviewsList" />
-      <Route to="./reviewsList" component={ReviewsList} />
     </div>
   );
 }

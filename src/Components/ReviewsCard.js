@@ -7,9 +7,9 @@ export default function ReviewsCard(props) {
   return (
     <Card className="body-width">
       <Card.Content header={props.review.title} />
-      <Card.Content>Username: {props.review.username}</Card.Content>
-      <Card.Content>Rating: {props.review.rating}</Card.Content>
-      <Card.Content>Comments: {props.review.comment}</Card.Content>
+      <Card.Meta>Username: {props.review.username}</Card.Meta>
+      <Card.Meta>Rating: {props.review.rating}</Card.Meta>
+      <Card.Description>Comments: {props.review.comment}</Card.Description>
     </Card>
   );
 }

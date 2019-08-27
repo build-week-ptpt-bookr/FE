@@ -3,6 +3,7 @@ import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import BookList from './BookList';
+import ReviewsList from './ReviewsCard';
 import About from './About';
 import MyCart from './MyCart';
 import ContactUs from './ContactUs';
@@ -30,6 +31,13 @@ export default function StickyNavbar() {
             >
               Books
             </NavLink>
+            <NavLink
+              to="/reviewsList"
+              className="nav-links"
+              activeClassName="hurray"
+            >
+              Reviews
+            </NavLink>
             <NavLink to="/about" className="nav-links" activeClassName="hurray">
               About
             </NavLink>
@@ -53,6 +61,7 @@ export default function StickyNavbar() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/bookList" component={BookList} />
+        <Route path="/bookList/reviewsList/:id" component={ReviewsList} />
         <Route path="/about" component={About} />
         <Route path="/myCart" component={MyCart} />
         <Route path="/contactUs" component={ContactUs} />
