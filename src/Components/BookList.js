@@ -7,10 +7,10 @@ export default function BookList() {
   const [books, setBooks] = useState([]);
   useEffect(() => {
     axios
-      .get('https://lambda-bookr.herokuapp.com/api/authors/')
+      .get('https://lambda-bookr.herokuapp.com/api/books/')
       .then(response => {
         setBooks(response.data);
-        console.log(response.data);
+        console.log(response);
       })
       .catch(error => console.log(error));
   }, []);
