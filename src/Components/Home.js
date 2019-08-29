@@ -1,12 +1,16 @@
 import React from 'react';
+import { Card, Image, Icon } from 'semantic-ui-react';
 
 import './Home.css';
-import books from './books.jpg';
 
-export default function Home() {
-  return (
-    <div className="home">
-      <img src={books} alt="books" />
-    </div>
-  );
-}
+const Home = () => (
+  <Card
+    className="home"
+    href="#card-example-link-card"
+    header="Bookr"
+    meta="Friend"
+    description="Book rating system"
+  />
+);
+
+export default Home;

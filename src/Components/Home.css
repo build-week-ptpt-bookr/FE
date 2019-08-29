@@ -1,5 +1,6 @@
-img {
-  padding-left: 400px;
-  max-height: 700px;
-  margin: auto;
+.ui.card.home {
+  margin-left: 400px;
+  margin-top: 300px;
+  width: auto;
+  overflow: visible !important;
 }
