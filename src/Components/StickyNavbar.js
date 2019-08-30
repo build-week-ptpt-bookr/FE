@@ -9,6 +9,8 @@ import ContactUs from './ContactUs';
 import LoginForm from './LoginForm';
 import ReviewsList from './ReviewsList';
 import Review from './Review';
+import TermsAndConditions from './TermsAndConditions';
+import PrivacyPolicy from './PrivacyPolicy';
 import NoMatch from './NoMatch';
 
 import './StickyNavbar.css';
@@ -71,6 +73,20 @@ export default function StickyNavbar() {
             <NavLink to="/login" className="nav-links" activeClassName="hurray">
               Login
             </NavLink>
+            <NavLink
+              to="/termsandconditions"
+              className="nav-links"
+              activeClassName="hurray"
+            >
+              Terms and conditions
+            </NavLink>
+            <NavLink
+              to="/privacypolicy"
+              className="nav-links"
+              activeClassName="hurray"
+            >
+              Privacy Policy
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -83,6 +99,8 @@ export default function StickyNavbar() {
         <Route exact path="/contactUs" component={ContactUs} />
         <Route path="/login" component={LoginForm} />
         <Route path="/review" component={Review} />
+        <Route path="/termsandconditions" component={TermsAndConditions} />
+        <Route path="/privacypolicy" component={PrivacyPolicy} />
         {/* NoMatch not quite working, not throwing errors */}
         <Route component={NoMatch} />
       </Switch>

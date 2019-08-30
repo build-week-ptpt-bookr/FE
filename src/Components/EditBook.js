@@ -1,9 +1,8 @@
 import React from 'react';
+import { Input } from 'semantic-ui-react';
 
-export default function EditBook() {
-  return (
-    <div>
-      <h2>Add or delete Books to database here</h2>
-    </div>
-  );
-}
+const Editbook = () => (
+  <Input action="Add Book" placeholder="Add a Book title" />
+);
+
+export default Editbook;
