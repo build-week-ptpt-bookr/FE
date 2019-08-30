@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function Review() {
-  const [reviews, setReviews] = useState([]);
+  const [deleteReviews, setDeleteReviews] = useState([]);
   useEffect(() => {
     axios
       .post('https://lambda-bookr.herokuapp.com/api/reviews/', {
@@ -10,10 +10,10 @@ export default function Review() {
       })
       .then(response => {
         console.log(response);
-        setReviews(response.data);
+        setDeleteReviews(response.data);
       })
       .catch(error => console.log(error));
   }, []);
 
-  return <div>Reviews{reviews} console logged</div>;
+  return <div>Reviews console logged</div>;
 }
