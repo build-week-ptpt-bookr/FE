@@ -12,13 +12,11 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  background-color: #00ffff;
+  background-color: transparent;
+  height: 300px;
 }
-.main-nav {
-  align-items: center;
-}
+
 .main-nav li {
-  border: 1px solid purple;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -33,6 +31,6 @@
   padding: 5px;
   font-size: 20px;
 }
-*/ .hurray {
+.hurray {
   color: #b9cef9;
 }

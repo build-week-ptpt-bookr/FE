@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'semantic-ui-react';
 import { Link, Route } from 'react-router-dom';
 
-import Review from './Review';
+import ReviewsList from './ReviewsList';
 import './BookList.css';
 
 export default function BookCard(props) {
@@ -10,8 +10,8 @@ export default function BookCard(props) {
     <Card className="body-width">
       <Card.Content header={props.book.title} />
       <Card.Content description={props.book.description} />
-      <Link to="/review/">Add Review</Link>
-      <Route path="/review/" component={Review} />
+      <Link to="/bookCard/reviewsList/:id">Add Review</Link>
+      <Route path="/bookCard/reviewList/:id" component={ReviewsList} />
     </Card>
   );
 }

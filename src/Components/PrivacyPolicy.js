@@ -3,7 +3,7 @@ import React from 'react';
 export default function PrivacyPolicy() {
   return (
     <div>
-      <h6>
+      <p style={{ color: 'white' }}>
         Privacy Policy Best Bookr PTPTBW1 Team @ Lambda built the Best Bookr app
         as a Free app. This SERVICE is provided by Best Bookr PTPTBW1 Team @
         Lambda at no cost and is intended for use as is. This page is used to
@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
         after they are posted on this page. Contact Us If you have any questions
         or suggestions about our Privacy Policy, do not hesitate to contact us
         at bestbookrteamptptbw@cuatrotresdos.uno.
-      </h6>
+      </p>
     </div>
   );
 }

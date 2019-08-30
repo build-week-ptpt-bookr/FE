@@ -39,7 +39,7 @@ const LoginForm = () => (
         </Segment>
       </Form>
       <Message>
-        New to us? <a href="#">Sign Up</a>
+        New to us? <a href="www.google.com">Sign Up</a>
       </Message>
     </Grid.Column>
   </Grid>

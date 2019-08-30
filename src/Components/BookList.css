@@ -1,7 +1,7 @@
 section {
   display: flex;
   flex-direction: row wrap;
-  background-color: aqua;
+  background-color: transparent;
   padding: 10px;
 }
 .grid-view {

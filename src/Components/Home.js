@@ -1,15 +1,12 @@
 import React from 'react';
-import { Card, Image, Icon } from 'semantic-ui-react';
 
 import './Home.css';
 
 const Home = () => (
-  <Card
-    href="#card-example-link-card"
-    header="Bookr"
-    meta="Friend"
-    description="Book rating system"
-  />
+  <div className="flex">
+    <h1>Bookr</h1>
+    <p>Add, Edit, Read Book Reviews</p>
+  </div>
 );
 
 export default Home;

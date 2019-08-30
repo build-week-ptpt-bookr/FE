@@ -22,7 +22,7 @@ const AboutUs = () => (
         <Card.Description>Full Stack Developer</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="www.google.com">
           <Icon name="user" />
           22 Friends
         </a>
@@ -38,7 +38,7 @@ const AboutUs = () => (
         <Card.Description>Full Stack Developer</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="www.google.com">
           <Icon name="user" />1 Friend
         </a>
       </Card.Content>
@@ -53,7 +53,7 @@ const AboutUs = () => (
         <Card.Description>Full Stack Developer</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="www.google.com">
           <Icon name="user" />1 Friend
         </a>
       </Card.Content>
@@ -68,7 +68,7 @@ const AboutUs = () => (
         <Card.Description>Full Stack Developer</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="www.google.com">
           <Icon name="user" />1 Friend
         </a>
       </Card.Content>
@@ -83,7 +83,7 @@ const AboutUs = () => (
         <Card.Description>Full Stack Developer</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="www.google.com">
           <Icon name="user" />1 Friend
         </a>
       </Card.Content>
@@ -98,7 +98,7 @@ const AboutUs = () => (
         <Card.Description>Full Stack Developer</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="www.google.com">
           <Icon name="user" />1 Friend
         </a>
       </Card.Content>
@@ -113,7 +113,7 @@ const AboutUs = () => (
         <Card.Description>Full Stack Developer</Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="www.google.com">
           <Icon name="user" />1 Friend
         </a>
       </Card.Content>

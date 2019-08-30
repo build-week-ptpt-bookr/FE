@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import ReviewsList from './ReviewsList';
 import BookCard from './BookCard';
 
 export default function BookList() {
@@ -19,14 +18,13 @@ export default function BookList() {
   return (
     <div>
       {/* reviewsList by id not working */}
-      <Link to="/reviewsList">
+      <Link to="/bookList/reviewsList/:id">
         <section className="grid-view">
           {books.map(book => {
             return <BookCard book={book} key={book.id} />;
           })}
         </section>
       </Link>
-      <Route path="/reviewsList" component={ReviewsList} />
     </div>
   );
 }

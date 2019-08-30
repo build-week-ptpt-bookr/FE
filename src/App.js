@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './App.css';
 import StickyNavbar from './Components/StickyNavbar';
-import EditBook from './Components/EditBook';
+import Review from './Components/Review';
 // import NewMenu from './Components/NewMenu';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter className="App">
       <StickyNavbar />
       {/* <NewMenu /> */}
-      <EditBook />
+      <Review />
     </BrowserRouter>
   );
 }
