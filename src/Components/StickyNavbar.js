@@ -3,11 +3,12 @@ import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import BookList from './BookList';
-import About from './About';
+import AboutUs from './AboutUs';
 import MyCart from './MyCart';
 import ContactUs from './ContactUs';
 import LoginForm from './LoginForm';
 import ReviewsList from './ReviewsList';
+import Review from './Review';
 import NoMatch from './NoMatch';
 
 import './StickyNavbar.css';
@@ -17,7 +18,7 @@ import logo from './bookLogo.png';
 export default function StickyNavbar() {
   return (
     <BrowserRouter>
-      <nav className="navbar navbar-fixed-left">
+      <nav className="navbar">
         <img src={logo} alt="logo" className="logo" />
         <ul className="main-nav" id="js-menu">
           <li>
@@ -32,8 +33,12 @@ export default function StickyNavbar() {
             >
               Books
             </NavLink>
-            <NavLink to="/about" className="nav-links" activeClassName="hurray">
-              About
+            <NavLink
+              to="/aboutUs"
+              className="nav-links"
+              activeClassName="hurray"
+            >
+              About Us
             </NavLink>
             <NavLink
               to="/myCart"
@@ -48,6 +53,13 @@ export default function StickyNavbar() {
               activeClassName="hurray"
             >
               Reviews List
+            </NavLink>
+            <NavLink
+              to="/review"
+              className="nav-links"
+              activeClassName="hurray"
+            >
+              Add Review
             </NavLink>
             <NavLink
               to="/contactUs"
@@ -66,10 +78,11 @@ export default function StickyNavbar() {
         <Route exact path="/" component={Home} />
         <Route exact path="/bookList" component={BookList} />
         <Route exact path="/reviewsList" component={ReviewsList} />
-        <Route exact path="/about" component={About} />
+        <Route exact path="/aboutUs" component={AboutUs} />
         <Route exact path="/myCart" component={MyCart} />
         <Route exact path="/contactUs" component={ContactUs} />
         <Route path="/login" component={LoginForm} />
+        <Route path="/review" component={Review} />
         {/* NoMatch not quite working, not throwing errors */}
         <Route component={NoMatch} />
       </Switch>

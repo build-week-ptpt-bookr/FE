@@ -1,0 +1,8 @@
+.content {
+  max-height: 300px;
+  overflow: auto;
+}
+h3 {
+  margin: 60px;
+  height: 40px;
+}

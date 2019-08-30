@@ -2,7 +2,6 @@ section {
   display: flex;
   flex-direction: row wrap;
   background-color: aqua;
-  margin-left: 400px;
   padding: 10px;
 }
 .grid-view {
@@ -14,8 +13,4 @@ section {
   display: flex;
   justify-content: center;
   margin-left: 400px;
-}
-.content {
-  max-height: 150px;
-  overflow: scroll;
 }

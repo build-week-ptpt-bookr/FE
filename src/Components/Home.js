@@ -5,7 +5,6 @@ import './Home.css';
 
 const Home = () => (
   <Card
-    className="home"
     href="#card-example-link-card"
     header="Bookr"
     meta="Friend"
